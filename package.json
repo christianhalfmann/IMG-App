@@ -2,9 +2,6 @@
   "name": "IMG-App",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"  
-  },
   "description": "A little app in development for course 'Internet applications for mobile devices'",
   "main": "server.js",
   "scripts": {
