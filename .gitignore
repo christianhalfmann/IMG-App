@@ -24,35 +24,12 @@ Temporary Items
 .apdisk
 
 
-### Windows ###
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-
 ### Linux ###
 *~
 
 # KDE directory preferences
 .directory
 
-
-### TextMate ###
-*.tmproj
-*.tmproject
-tmtags
 
 
 ### SublimeText ###
@@ -66,9 +43,6 @@ tmtags
 #sftp configuration file
 sftp-config.json
 
-### WebStorm ###
-.idea/
-
 # External tool builders
 .externalToolBuilders/
 
@@ -81,7 +55,7 @@ sftp-config.json
 # PDT-specific
 .buildpath
 
-# sbteclipse plugin 
+# sbteclipse plugin
 .target
 
 # TeXlipse plugin
@@ -121,3 +95,6 @@ node_modules
 
 ### Bower ###
 bower_components
+
+### WebStorm ###
+.idea/workspace.xml
