@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET request to server.de/api. */
-router.get('/api/', function(req, res, next) {
+router.get('/', function(req, res, next) {
     var testData = {
         message: 'Hello World'
     };

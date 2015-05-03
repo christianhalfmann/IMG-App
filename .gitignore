@@ -67,7 +67,7 @@ tmtags
 sftp-config.json
 
 ### WebStorm ###
-.idea
+.idea/
 
 ### Eclipse ###
 *.pydevproject
