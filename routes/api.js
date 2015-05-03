@@ -9,4 +9,12 @@ router.get('/', function(req, res, next) {
     res.json(testData);
 });
 
+/* GET request to server.de/api/:id */
+router.get('/:sessionId', function(req, res, next) {
+    var testData = {
+        session: req.params.sessionId
+    };
+    res.json(testData);
+});
+
 module.exports = router;
