@@ -20,7 +20,7 @@ router.get('/', function(req, res) {
 });
 
 /*
- * GET request to server.de/admin/api/sessions to return a list of all sessions
+ * GET request to /admin/api/sessions to return a list of all sessions
  */
 router.get('/api/sessions', function(req, res) {
     console.log("Request to /admin/sessions");
@@ -29,7 +29,7 @@ router.get('/api/sessions', function(req, res) {
 });
 
 /*
- * GET request to server.de/admin/api/sessions/:sessionId to return the session
+ * GET request to /admin/api/sessions/:sessionId to return the session
  * with the given id
  */
 router.get('/api/sessions/:sessionId', function(req, res) {
@@ -37,6 +37,14 @@ router.get('/api/sessions/:sessionId', function(req, res) {
     console.log("Request to /admin/sessions/" + sessionId);
     var session = ListController.getSessionById(sessionId);
     res.json(session);
+});
+
+/*
+ * POST request to /admin/api/sessions
+ */
+router.post('/api/sessions', function(req, res) {
+    console.log(req.body.msg);
+    res.json(req.body.msg);
 });
 
 module.exports = router;
