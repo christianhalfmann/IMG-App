@@ -2,7 +2,7 @@
  * JavaScript objects and methods used in the backend section.
  *
  * @author Andreas Willems
- * @version 03 MAY 2015
+ * @version 04 MAY 2015
  */
 
 (function(window) {
