@@ -97,4 +97,4 @@ node_modules
 bower_components
 
 ### WebStorm ###
-.idea/workspace.xml
+.idea
