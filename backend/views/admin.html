@@ -13,7 +13,12 @@
     <nav>
         <button id="btnShowAllSessions">Show all sessions</button>
         <button id="btnShowSessionsWithId">Show session with id</button>
+        <button id="btnSayName">Say name</button>
     </nav>
+    <form action="/admin/api/sessions" method="post" enctype="multipart/form-data">
+        <input type="file" value="upload">
+        <input type="submit" value="Senden">
+    </form>
     <div id="content-div">
 
     </div>

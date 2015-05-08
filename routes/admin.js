@@ -43,8 +43,7 @@ router.get('/api/sessions/:sessionId', function(req, res) {
  * POST request to /admin/api/sessions
  */
 router.post('/api/sessions', function(req, res) {
-    console.log(req.body.msg);
-    res.json(req.body.msg);
+    res.redirect('/admin');
 });
 
 module.exports = router;

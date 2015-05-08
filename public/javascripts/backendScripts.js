@@ -5,11 +5,17 @@
  * @version 04 MAY 2015
  */
 
-(function(window) {
+(function() {
+
     document.addEventListener('DOMContentLoaded', function(event) {
 
+        var $ = awQuery.findElement;
+
         $('#btnShowAllSessions').addEventListener('click', function () {
-            awQuery.ajax('/admin/api/sessions', {'method': 'GET'},
+            awQuery.ajax('/admin/api/sessions',
+                {
+                    'method': 'GET'
+                },
                 function(response) {
                     var res = JSON.parse(response);
                     $('#content-div').innerHTML = res[1]['msg'];
@@ -27,6 +33,10 @@
                     $('#content-div').innerHTML = JSON.parse(response);
                 }
             );
+        });
+
+        $('#btnSayName').addEventListener('click', function() {
+            $('#content-div').innerHTML = 'Test';
         });
 
     }); // close document.addEventListener
